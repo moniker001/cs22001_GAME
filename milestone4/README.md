@@ -8,3 +8,4 @@
 - Learned Skill(s)
     - Double jump
 - Save/load game
+- Items (health, stamina, attack power boost upon pick up)
