@@ -126,6 +126,9 @@ TEST_F(TEST_CHARACTER, TEST_SAVEGAME)
     float maxHealth = character.MaxHealth;
     float attack = character.AttackPower;
     int maxJumps = character.MaxJumps;
+    int currentXP = character.CurrentXP;
+    int maxXP = character.MaxXP;
+    int currentLevel = character.CurrentLevel;
     
     // apply changes
     GoToNextLevel();
@@ -135,8 +138,11 @@ TEST_F(TEST_CHARACTER, TEST_SAVEGAME)
     
     // compare the state
     EXPECT_TRUE(CurrentGame.Level == level + 1);
-    EXPECT_TRUE(character.MaxHealth == character.Health);
-    EXPECT_TRUE(character.MaxStamina == character.Stamina);
+    EXPECT_TRUE(character.Health == character.MaxHealth);
+    EXPECT_TRUE(character.Stamina == character.MaxStamina);
     EXPECT_TRUE(character.Attack == attack);
-    EXPECT_TRUE(character.MaxJumps == maxJumps);
+    EXPECT_TRUE(character.maxJumps == maxJumps);
+    EXPECT_TRUE(character.currentXP = CurrentXP);
+    EXPECT_TRUE(character.MaxXP == maxXP);
+    EXPECT_TRUE(character.CurrentLevel == currentLevel);
 }
