@@ -107,7 +107,7 @@ We implemented a Player HUD that allows for continuous monitoring of your statis
 Instead of items you have to equip and use from a menu, we decided to have items that instantly affect the character when they are picked up. We decided this would fit the aesthetic and feel of the game better, as we shifted from RPG to a more platformer-style game.
 
 - **save and load game**  
-Opening the game executable will start a new game by default. The game will automatically save the player's information (level, experience, etc) and location every time the player reaches the next level as a checkpoint. Only one save file is stored at a time and the player can load this save file by accessing the menu and selecting the "Load Last Save" option. The player may also restart the game by selecting "New Game, which will transport the player to the starting position and replace their information with the basic starting information.
+Opening the game executable will start a new game by default. The game will automatically save the player's information (level, experience, etc) and location every time the player reaches the next level as a checkpoint. Only one save file is stored at a time and the player can load this save file by accessing the menu and selecting the "Load Last Save" option. A save file will always exist until it is overwritten. The player may also restart the game by selecting "New Game, which will transport the player to the starting position and replace their information with the basic starting information.
 
 ### (6) who did who: who paired with who; which part is implemented by which pair
 
